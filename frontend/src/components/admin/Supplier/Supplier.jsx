@@ -83,10 +83,6 @@ export default function Supplier() {
     }
 
     const handleDelete = async (id) => {
-        const confirmed = window.confirm(
-            'Are you sure you want to delete this supplier?'
-        )
-
         if (!confirmed) {
             return
         }

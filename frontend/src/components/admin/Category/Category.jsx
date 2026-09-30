@@ -74,9 +74,7 @@ export default function Category() {
     }
 
     const handleDelete = async (id) => {
-        const confirmed = window.confirm(
-            'Are you sure you want to delete this category?'
-        )
+        
         if (!confirmed) {
             return
         }

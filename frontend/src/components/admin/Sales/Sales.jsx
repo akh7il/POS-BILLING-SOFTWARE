@@ -38,10 +38,6 @@ export default function Sales() {
     }
 
     const handleDelete = async (id) => {
-        const confirmed = window.confirm(
-            'Are you sure you want to delete this invoice?'
-        )
-
         if (!confirmed) {
             return
         }

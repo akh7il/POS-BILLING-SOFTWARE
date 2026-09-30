@@ -81,10 +81,6 @@ export default function Inventory() {
     }
 
     const handleDelete = async (id) => {
-        const confirmed = window.confirm(
-            'Are you sure you want to delete this product?'
-        )
-
         if (!confirmed) {
             return
         }
