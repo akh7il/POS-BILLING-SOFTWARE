@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+.venv/
+venv/
+env/
+node_modules/
+dist/
+build/
+.vscode/
+.idea/
+*.log
+.DS_Store
+desktop.ini

@@ -1,0 +1,269 @@
+.staffs {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.staffs h1 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0;
+    color: #F2A900;
+    width: 100%;
+    margin: 0;
+}
+
+.staffs-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.add-staff {
+    width: max-content;
+    font-family: 'Roundex';
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: #F2A900;
+    border: 0;
+    padding: 1rem 2rem;
+    min-width: 300px;
+    cursor: pointer;
+    border-radius: .3rem;
+    transition: all 1s ease;
+}
+
+.add-staff:hover .plus {
+    color: #fff;
+}
+
+.plus {
+    font-size: 1.3rem;
+}
+
+.display-staffs {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.display-staffs::-webkit-scrollbar {
+    display: none;
+}
+
+.display-staffs table {
+    width: 100%;
+    min-width: 750px;
+    background-color: transparent;
+}
+
+.display-staffs table tr th,
+.display-staffs table tr td {
+    text-align: center;
+    padding: .5rem 2rem;
+    background-color: #000;
+    color: #F2A900;
+    border-radius: .2rem;
+    border: 1px solid #F2A900;
+}
+
+.display-staffs table tr th {
+    font-family: 'Gofia';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+.display-staffs table tr td {
+    font-family: 'Roundex';
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+
+.view-staff,
+.delete-staff {
+    text-decoration: none;
+    color: #F2A900;
+    font-size: 1.2rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.display-staffs table tr:hover {
+    background-color: #F2A900;
+}
+
+.display-staffs table tr:hover td {
+    color: #000;
+}
+
+.display-staffs table tr:hover .view-staff {
+    color: #000;
+}
+
+.display-staffs table tr:hover .delete-staff {
+    color: #000;
+}
+
+.hide {
+    display: none;
+}
+
+.addstaff {
+    width: auto;
+    max-width: 600px;
+    background-color: #F2A900;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    padding-bottom: .5rem;
+    gap: 1rem;
+    border-radius: .4rem;
+}
+
+.addstaff h2 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.addstaff form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.staff-account-information,
+.staff-personal-information {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.staff-account-information h3,
+.staff-personal-information h3 {
+    font-family: 'Gofia';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .85rem;
+    margin: .3rem 0;
+}
+
+.addstaff form input,
+.addstaff form textarea,
+.select-role {
+    padding: .8rem;
+    border: 0;
+    min-width: 400px;
+    border-radius: .3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: none;
+    font-size: .8rem;
+    box-sizing: border-box;
+}
+
+.addstaff form textarea {
+    min-height: 100px;
+    resize: none;
+    scrollbar-width: none;
+
+}
+
+.addstaff form input:focus,
+.addstaff form textarea:focus,
+.select-role:focus {
+    outline: none;
+}
+
+.addstaff form input::placeholder,
+.addstaff form textarea::placeholder {
+    font-family: 'Roundex';
+    text-transform: lowercase;
+    font-size: .8rem;
+}
+
+.select-role {
+    background-color: #fff;
+}
+
+.form-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button,
+.save-button {
+    border: 0;
+    padding: .7rem 0;
+    width: 40%;
+    border-radius: .2rem;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roundex';
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 678px) {
+
+    .staffs-top {
+        align-items: center;
+    }
+
+    .add-staff {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .display-staffs {
+        padding: .7rem;
+    }
+
+    .display-staffs table {
+        min-width: 750px;
+    }
+
+    .display-staffs table tr th,
+    .display-staffs table tr td {
+        padding: .5rem 1rem;
+    }
+
+    .addstaff {
+        width: calc(100% - 1rem);
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .addstaff form input,
+    .addstaff form textarea,
+    .select-role {
+        min-width: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,116 @@
+.inventory {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.inventory h1 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0;
+    color: #F2A900;
+    width: 100%;
+    margin: 0;
+}
+
+.inventory-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.display-inventory {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.display-inventory::-webkit-scrollbar {
+    display: none;
+}
+
+.display-inventory table {
+    width: 100%;
+    min-width: 700px;
+    background-color: transparent;
+}
+
+.display-inventory table tr th,
+.display-inventory table tr td {
+    text-align: center;
+    padding: .5rem 2rem;
+    background-color: #000;
+    color: #F2A900;
+    border-radius: .2rem;
+    border: 1px solid #F2A900;
+}
+
+.display-inventory table tr th {
+    font-family: 'Gofia';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+.display-inventory table tr td {
+    font-family: 'Roundex';
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+
+.view-inventory,
+.delete-inventory {
+    text-decoration: none;
+    color: #F2A900;
+    font-size: 1.2rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.display-inventory table tr:hover {
+    background-color: #F2A900;
+}
+
+.display-inventory table tr:hover td {
+    color: #000;
+}
+
+.display-inventory table tr:hover .view-inventory {
+    color: #000;
+}
+
+.display-inventory table tr:hover .delete-inventory {
+    color: #000;
+}
+
+@media screen and (max-width: 678px) {
+
+    .display-inventory {
+        padding: .7rem;
+    }
+
+    .display-inventory table {
+        min-width: 700px;
+    }
+
+    .display-inventory table tr th,
+    .display-inventory table tr td {
+        padding: .5rem 1rem;
+    }
+}

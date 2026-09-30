@@ -1,0 +1,408 @@
+.sales-billing {
+    width: 100%;
+    min-height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Roundex';
+}
+
+.sales-billing-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sales-billing-header h1 {
+    margin: 0;
+    color: #F2A900;
+    font-family: 'Alizah';
+    text-transform: uppercase;
+}
+
+.sales-billing-header p {
+    margin: .3rem 0 0;
+    color: #fff;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+.invoice-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .3rem;
+}
+
+.invoice-date span {
+    color: #777;
+    font-size: .65rem;
+    text-transform: uppercase;
+}
+
+.invoice-date strong {
+    color: #F2A900;
+    font-size: .75rem;
+}
+
+.sales-billing-content {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: .7rem;
+}
+
+.sales-billing-left {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.customer-section,
+.product-section,
+.sale-items,
+.payment-section {
+    background-color: #000;
+    border: 1px solid #F2A900;
+    border-radius: .3rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.customer-section h2,
+.product-section h2,
+.sale-items h2,
+.payment-section h2 {
+    margin: 0 0 1rem;
+    color: #F2A900;
+    font-family: 'Gofia';
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.customer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.input-group label {
+    color: #888;
+    font-size: .65rem;
+    text-transform: uppercase;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: .75rem;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: .25rem;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Roundex';
+    font-size: .75rem;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #F2A900;
+}
+
+.input-group textarea {
+    min-height: 75px;
+    resize: vertical;
+}
+
+.address-input {
+    grid-column: 1 / -1;
+}
+
+.barcode-section {
+    display: grid;
+    grid-template-columns: 1fr 130px;
+    gap: .7rem;
+}
+
+.product-details {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: .3rem;
+    background-color: #111;
+}
+
+.product-detail-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-detail-top div,
+.price-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.product-detail-top span,
+.price-grid span {
+    color: #777;
+    font-size: .6rem;
+    text-transform: uppercase;
+}
+
+.product-detail-top strong {
+    color: #fff;
+    font-size: .8rem;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .7rem;
+}
+
+.price-grid strong {
+    color: #F2A900;
+    font-size: .8rem;
+}
+
+.price-grid input {
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: .2rem;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roundex';
+    font-size: .75rem;
+}
+
+.payable-box {
+    grid-column: 1 / -1;
+    margin-top: .5rem;
+    padding: .8rem;
+    border: 1px solid #F2A900;
+    border-radius: .3rem;
+    background-color: #F2A900;
+}
+
+.payable-box span,
+.payable-box strong {
+    color: #000 !important;
+}
+
+.payable-box strong {
+    font-size: 1.2rem;
+}
+
+.add-product-button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: .75rem;
+    border: 0;
+    border-radius: .25rem;
+    background-color: #F2A900;
+    color: #000;
+    font-family: 'Roundex';
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.product-not-found {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: .3rem;
+    color: #777;
+    text-align: center;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+.sale-items-table {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.sale-items-table::-webkit-scrollbar {
+    display: none;
+}
+
+.sale-items-table table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: separate;
+    border-spacing: .2rem;
+}
+
+.sale-items-table th,
+.sale-items-table td {
+    padding: .6rem;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: .2rem;
+    font-size: .65rem;
+}
+
+.sale-items-table th {
+    color: #F2A900;
+    font-family: 'Gofia';
+    text-transform: uppercase;
+}
+
+.sale-items-table td {
+    color: #ccc;
+}
+
+.remove-sale-item {
+    border: 0;
+    background-color: transparent;
+    color: #F2A900;
+    cursor: pointer;
+}
+
+.empty-sale {
+    padding: 1.5rem !important;
+    color: #666 !important;
+    text-transform: uppercase;
+}
+
+.sales-billing-right {
+    min-width: 0;
+}
+
+.payment-section {
+    position: sticky;
+    top: 1rem;
+}
+
+.payment-summary {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.payment-summary>div {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0;
+    border-bottom: 1px solid #222;
+}
+
+.payment-summary span {
+    color: #777;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+.payment-summary strong {
+    color: #fff;
+    font-size: .75rem;
+}
+
+.payment-summary .final-total {
+    margin-top: .5rem;
+    padding: .8rem;
+    border: 1px solid #F2A900;
+    border-radius: .3rem;
+    background-color: #F2A900;
+}
+
+.payment-summary .final-total span,
+.payment-summary .final-total strong {
+    color: #000;
+}
+
+.payment-summary .final-total strong {
+    font-size: 1rem;
+}
+
+.generate-invoice {
+    width: 100%;
+    margin-top: 1rem;
+    padding: .9rem;
+    border: 0;
+    border-radius: .3rem;
+    background-color: #F2A900;
+    color: #000;
+    font-family: 'Roundex';
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.generate-invoice:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 900px) {
+
+    .sales-billing-content {
+        grid-template-columns: 1fr;
+    }
+
+    .sales-billing-right {
+        width: 100%;
+    }
+
+    .payment-section {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .sales-billing {
+        padding: .7rem;
+    }
+
+    .sales-billing-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .invoice-date {
+        align-items: flex-start;
+    }
+
+    .customer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .address-input {
+        grid-column: auto;
+    }
+
+    .barcode-section {
+        grid-template-columns: 1fr;
+    }
+
+    .price-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-detail-top {
+        flex-direction: column;
+    }
+}

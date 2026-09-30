@@ -1,0 +1,202 @@
+.categories {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.categories h1 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0;
+    color: #F2A900;
+    width: 100%;
+    text-align: center;
+}
+
+.categories-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 1rem;
+}
+
+.add-category {
+    width: max-content;
+    font-family: 'Roundex';
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: #F2A900;
+    border: 0;
+    padding: 1rem 2rem;
+    min-width: 300px;
+    cursor: pointer;
+    border-radius: .3rem;
+    transition: all 1s ease;
+}
+
+.add-category:hover .plus {
+    color: #fff;
+}
+
+.plus {
+    font-size: 1.3rem;
+}
+
+.display-categories {
+    flex: 1;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 1rem;
+}
+
+.display-categories table {
+    width: 100%;
+    background-color: transparent;
+}
+
+.display-categories table tr th,
+.display-categories table tr td {
+    text-align: center;
+    padding: .5rem 2rem;
+    background-color: #000;
+    color: #F2A900;
+    border-radius: .2rem;
+    border: 1px solid #F2A900;
+}
+
+.display-categories table tr th {
+    font-family: 'Gofia';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+.display-categories table tr td {
+    font-family: 'Roundex';
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+
+.view-category,
+.delete-category {
+    text-decoration: none;
+    color: #F2A900;
+    font-size: 1.2rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.display-categories table tr:hover {
+    background-color: #F2A900;
+}
+
+.display-categories table tr:hover td {
+    color: #000;
+}
+
+.display-categories table tr:hover .view-category {
+    color: #000;
+}
+
+.display-categories table tr:hover .delete-category {
+    color: #000;
+}
+
+.hide {
+    display: none;
+}
+
+.addcategory {
+    width: auto;
+    background-color: #F2A900;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    padding-bottom: .5rem;
+    gap: 1rem;
+    border-radius: .4rem;
+}
+
+.addcategory h2 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.addcategory form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.addcategory form input {
+    padding: .8rem;
+    border: 0;
+    min-width: 400px;
+    border-radius: .3rem;
+    font-family: 'Roundex';
+    text-transform: none;
+    font-size: .8rem;
+}
+
+.addcategory form input:focus {
+    outline: none;
+}
+
+.addcategory form input::placeholder {
+    font-family: 'Roundex';
+    text-transform: lowercase;
+    font-size: .8rem;
+}
+
+.form-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button,
+.save-button {
+    border: 0;
+    padding: .7rem 0;
+    width: 40%;
+    border-radius: .2rem;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roundex';
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 678px) {
+    .categories-top {
+        align-items: center;
+    }
+
+    .add-category {
+        min-width: 0;
+    }
+
+    .addcategory form input {
+        min-width: 0;
+    }
+}

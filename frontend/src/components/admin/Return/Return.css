@@ -1,0 +1,277 @@
+.returns {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+}
+
+.returns-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.returns h1 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0;
+    color: #F2A900;
+    width: 100%;
+    margin: 0;
+}
+
+.return-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.return-search input {
+    width: 400px;
+    padding: .9rem;
+    border: 0;
+    border-radius: .3rem;
+    font-family: 'Roundex';
+    font-size: .8rem;
+    box-sizing: border-box;
+}
+
+.return-search input:focus {
+    outline: none;
+}
+
+.return-search input::placeholder {
+    font-family: 'Roundex';
+    text-transform: lowercase;
+}
+
+.search-invoice {
+    padding: .9rem 1.5rem;
+    border: 0;
+    border-radius: .3rem;
+    background-color: #F2A900;
+    color: #000;
+    font-family: 'Roundex';
+    text-transform: uppercase;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.invoice-details {
+    width: calc(100% - 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-sizing: border-box;
+}
+
+.invoice-information,
+.customer-information,
+.purchased-products,
+.return-product {
+    width: 100%;
+    background-color: #F2A900;
+    border-radius: .4rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.invoice-information h2,
+.customer-information h2,
+.purchased-products h2,
+.return-product h2 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0 0 1rem 0;
+}
+
+.invoice-info-grid,
+.customer-info-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.invoice-info-grid div,
+.customer-info-grid div {
+    background-color: #000;
+    border-radius: .3rem;
+    padding: .8rem;
+}
+
+.invoice-info-grid span,
+.customer-info-grid span {
+    font-family: 'Gofia';
+    font-weight: 900;
+    color: #F2A900;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+.invoice-info-grid p,
+.customer-info-grid p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: .8rem;
+    margin: .5rem 0 0 0;
+}
+
+.purchased-products-table {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.purchased-products-table::-webkit-scrollbar {
+    display: none;
+}
+
+.purchased-products-table table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+.purchased-products-table th,
+.purchased-products-table td {
+    text-align: center;
+    padding: .6rem 1rem;
+    border: 1px solid #000;
+}
+
+.purchased-products-table th {
+    font-family: 'Gofia';
+    text-transform: uppercase;
+    font-size: .75rem;
+    background-color: #000;
+    color: #F2A900;
+}
+
+.purchased-products-table td {
+    font-family: 'Roundex';
+    font-size: .8rem;
+    background-color: transparent;
+    color: #000;
+}
+
+.return-product form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7rem;
+}
+
+.return-product input {
+    padding: .8rem;
+    border: 0;
+    border-radius: .3rem;
+    font-family: 'Roundex';
+    font-size: .8rem;
+    box-sizing: border-box;
+}
+
+.return-product input:focus {
+    outline: none;
+}
+
+.return-product input::placeholder {
+    font-family: 'Roundex';
+    text-transform: lowercase;
+}
+
+.return-button {
+    grid-column: 1 / -1;
+    width: 80%;
+    justify-self: center;
+    padding: .4rem;
+    border: 0;
+    border-radius: .3rem;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roundex';
+    text-transform: uppercase;
+    font-size: .8rem;
+    cursor: pointer;
+    font-size: .7rem;
+}
+
+.no-order-found {
+    width: calc(100% - 2rem);
+    min-height: 250px;
+    background-color: #F2A900;
+    border-radius: .4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+.no-order-found i {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.no-order-found h2 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+}
+
+.no-order-found p {
+    font-family: 'Roundex';
+    font-size: .8rem;
+    margin: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 678px) {
+
+    .return-search {
+        flex-direction: column;
+    }
+
+    .return-search input {
+        width: 100%;
+    }
+
+    .search-invoice {
+        width: 100%;
+    }
+
+    .invoice-details {
+        width: calc(100% - 1.4rem);
+    }
+
+    .invoice-info-grid,
+    .customer-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .return-product form {
+        grid-template-columns: 1fr;
+    }
+
+    .return-button {
+        width: 100%;
+    }
+
+    .no-order-found {
+        width: calc(100% - 1.4rem);
+    }
+}

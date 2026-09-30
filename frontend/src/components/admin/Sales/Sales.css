@@ -1,0 +1,116 @@
+.sales {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.sales h1 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0;
+    color: #F2A900;
+    width: 100%;
+    margin: 0;
+}
+
+.sales-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.display-sales {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.display-sales::-webkit-scrollbar {
+    display: none;
+}
+
+.display-sales table {
+    width: 100%;
+    min-width: 850px;
+    background-color: transparent;
+}
+
+.display-sales table tr th,
+.display-sales table tr td {
+    text-align: center;
+    padding: .5rem 2rem;
+    background-color: #000;
+    color: #F2A900;
+    border-radius: .2rem;
+    border: 1px solid #F2A900;
+}
+
+.display-sales table tr th {
+    font-family: 'Gofia';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+.display-sales table tr td {
+    font-family: 'Roundex';
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+
+.edit-sale,
+.delete-sale {
+    text-decoration: none;
+    color: #F2A900;
+    font-size: 1.2rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.display-sales table tr:hover {
+    background-color: #F2A900;
+}
+
+.display-sales table tr:hover td {
+    color: #000;
+}
+
+.display-sales table tr:hover .edit-sale {
+    color: #000;
+}
+
+.display-sales table tr:hover .delete-sale {
+    color: #000;
+}
+
+@media screen and (max-width: 678px) {
+
+    .display-sales {
+        padding: .7rem;
+    }
+
+    .display-sales table {
+        min-width: 850px;
+    }
+
+    .display-sales table tr th,
+    .display-sales table tr td {
+        padding: .5rem 1rem;
+    }
+}

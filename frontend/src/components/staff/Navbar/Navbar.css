@@ -1,0 +1,12 @@
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar-brand{
+    align-items: center;
+    font-family: var(--brand-name-font);
+    font-size: 2rem;
+}

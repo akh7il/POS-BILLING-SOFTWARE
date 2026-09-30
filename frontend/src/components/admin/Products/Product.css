@@ -1,0 +1,215 @@
+.products {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.products h1 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0;
+    color: #F2A900;
+    width: 100%;
+    text-align: center;
+}
+
+.products-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.add-products {
+    width: max-content;
+    font-family: 'Roundex';
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: #F2A900;
+    border: 0;
+    padding: 1rem 2rem;
+    min-width: 300px;
+    cursor: pointer;
+    border-radius: .3rem;
+    transition: all 1s ease;
+}
+
+.add-products:hover .plus {
+    color: #fff;
+}
+
+.plus {
+    font-size: 1.3rem;
+}
+
+.display-products {
+    flex: 1;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 1rem;
+}
+
+.display-products table {
+    width: 100%;
+    background-color: transparent;
+}
+
+.display-products table tr th,
+td {
+    text-align: center;
+    padding: .5rem 2rem;
+    background-color: #000;
+    color: #F2A900;
+    border-radius: .2rem;
+    border: 1px solid #F2A900;
+}
+
+.display-products table tr th {
+    font-family: 'Gofia';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+.display-products table tr td {
+    font-family: 'Roundex';
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+
+.view-product,
+.delete-product {
+    text-decoration: none;
+    color: #F2A900;
+    font-size: 1.2rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.display-products table tr:hover {
+    background-color: #F2A900;
+}
+
+.display-products table tr:hover td {
+    color: #000;
+}
+
+.display-products table tr:hover .view-product {
+    color: #000;
+}
+
+.display-products table tr:hover .delete-product {
+    color: #000;
+}
+
+.hide {
+    display: none;
+}
+
+.addproducts {
+    width: auto;
+    background-color: #F2A900;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    padding-bottom: .5rem;
+    gap: 1rem;
+    border-radius: .4rem;
+}
+
+.addproducts h2 {
+    font-family: 'Alizah';
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.addproducts form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.addproducts form input {
+    padding: .8rem;
+    border: 0;
+    min-width: 400px;
+    border-radius: .3rem;
+    font-family: 'Roundex';
+    text-transform: none;
+    font-size: .8rem;
+}
+
+.addproducts form input:focus {
+    outline: none;
+}
+
+.addproducts form input::placeholder {
+    font-family: 'Roundex';
+    text-transform: lowercase;
+    font-size: .8rem;
+}
+
+.select-category,
+.select-suppllier {
+    padding: .8rem;
+    border: 0;
+    border-radius: .3rem;
+    font-family: 'Roundex';
+    font-size: .8rem;
+}
+
+.select-category:focus,
+.select-suppllier:focus {
+    outline: none;
+}
+
+.form-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.canel-button,
+.save-button {
+    border: 0;
+    padding: .7rem 0;
+    width: 40%;
+    border-radius: .2rem;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roundex';
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 678px) {
+    .products-top {
+        align-items: center;
+    }
+
+    .add-products {
+        min-width: 0
+    }
+
+    .addproducts form input {
+        min-width: 0;
+    }
+}
