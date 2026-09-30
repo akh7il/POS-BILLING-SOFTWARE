@@ -10,7 +10,6 @@ const api = axios.create({
 api.interceptors.request.use((config) => {
     const token = localStorage.getItem('accessToken')
 
-    // Never attach a token to the login endpoint
     const isAuthEndpoint = config.url?.includes('accounts/login/')
 
     if (token && !isAuthEndpoint) {
